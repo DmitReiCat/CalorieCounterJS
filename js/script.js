@@ -27,19 +27,19 @@ inputsGroup.addEventListener('input', () => {
 activityInput.addEventListener('change', (evt) => {
     switch (evt.target.id) {
         case 'activity-minimal':
-            state.activity = activityLevel.min;
+            state.activity = activityLevel.MIN;
             break;
-        case 'activity-low':
-            state.activity = activityLevel.low;
+        case 'activity-LOW':
+            state.activity = activityLevel.LOW;
             break;
-        case 'activity-medium':
-            state.activity = activityLevel.medium;
+        case 'activity-MEDIUM':
+            state.activity = activityLevel.MEDIUM;
             break;
-        case 'activity-high':
-            state.activity = activityLevel.high;
+        case 'activity-HIGH':
+            state.activity = activityLevel.HIGH;
             break;
         case 'activity-maximal':
-            state.activity = activityLevel.max;
+            state.activity = activityLevel.MAX;
             break;
     }
 });
@@ -59,7 +59,7 @@ bnSubmit.addEventListener('click', (evt) => {
 });
 
 form.addEventListener('reset', () => {
-    state.activity = activityLevel.min;
+    state.activity = activityLevel.MIN;
     resultBlock.classList.add('counter__result--hidden');
     bnSubmit.disabled = true;
     bnReset.disabled = true;

@@ -1,9 +1,9 @@
 const activityLevel = {
-    min: 1.2,
-    low: 1.375,
-    medium: 1.55,
-    high: 1.725,
-    max: 1.9,
+    MIN: 1.2,
+    LOW: 1.375,
+    MEDIUM: 1.55,
+    HIGH: 1.725,
+    MAX: 1.9,
 };
 
 const state = {
@@ -11,7 +11,7 @@ const state = {
     age: 0,
     height: 0,
     weight: 0,
-    activity: activityLevel.min
+    activity: activityLevel.MIN
 }
 
 const getCaloriesNorm = () => {
