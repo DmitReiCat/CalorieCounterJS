@@ -29,13 +29,13 @@ activityInput.addEventListener('change', (evt) => {
         case 'activity-minimal':
             state.activity = activityLevel.MIN;
             break;
-        case 'activity-LOW':
+        case 'activity-low':
             state.activity = activityLevel.LOW;
             break;
-        case 'activity-MEDIUM':
+        case 'activity-medium':
             state.activity = activityLevel.MEDIUM;
             break;
-        case 'activity-HIGH':
+        case 'activity-high':
             state.activity = activityLevel.HIGH;
             break;
         case 'activity-maximal':
